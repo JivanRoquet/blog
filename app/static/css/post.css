@@ -1,0 +1,21 @@
+time.posted_at {
+    color: #666;
+}
+
+article h1.post-title {
+    margin: 13px 0;
+}
+
+article div.post-body {
+    margin-top: 17px;
+    border-top: 1px solid #ccc;
+}
+
+div.posts-list article div.post-body {
+    border-top: none;
+}
+
+div.posts-list article {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 15px;
+}

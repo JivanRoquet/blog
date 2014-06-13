@@ -1,0 +1,11 @@
+<div id="sidebar">
+    <div id="sidebar-tags">
+        <h2>Tags</h2>
+        {% for tag, count in get_sidebar_tags() %}
+            <ul class="tags">
+                {% set plural = 's' if count > 1 else '' %}
+                <li><span class="tag">{{ tag }}</span> - {{ count }} post{{ plural }}</li>
+            </ul>
+        {% endfor %}
+    </div>
+</div>

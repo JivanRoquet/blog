@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block stylesheets %}
+    {{ super() }}
+    <link rel="stylesheet" type="text/css" href="/static/css/post.css" />
+{% endblock %}
+
+{% block content %}
+    {% include "posts-list.html" %}
+{% endblock %}

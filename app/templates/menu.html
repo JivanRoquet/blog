@@ -1,0 +1,11 @@
+<header id="menu">
+    <div class="container">
+        <div class="title inner"><a href="{{ url_for('index') }}">jivanroquet.com</a></div>
+        <nav class="links inner">
+            <span class="link"><a href="{{ url_for('index') }}">Blog</a></span>
+            {% for page in get_menu_pages() %}
+            <span class="link"><a href="{{ url_for('page', url=page.url) }}">{{ page.label }}</a></span>
+            {% endfor %}
+        </nav>
+    </div>
+</header>
