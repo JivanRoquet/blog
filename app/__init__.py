@@ -10,7 +10,8 @@ app = Flask(__name__)
 app.config.from_object('config')
 app.debug = app.config['DEBUG']
 
-toolbar = DebugToolbarExtension(app)
+if app.debug:
+    toolbar = DebugToolbarExtension(app)
 
 babel = Babel(app)
 
