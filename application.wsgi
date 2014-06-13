@@ -1,6 +1,6 @@
 import os, sys
 
-PROJECT_DIR = '/var/www/jivanroquet'
+PROJECT_DIR = '/var/www/blog'
 
 activate_this = os.path.join(PROJECT_DIR, 'bin', 'activate_this.py')
 exec(open(activate_this).read(), dict(__file__=activate_this))
