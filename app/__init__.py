@@ -8,6 +8,7 @@ app = Flask(__name__)
 
 # loads configuration
 app.config.from_object('config')
+app.debug = app.config['DEBUG']
 
 toolbar = DebugToolbarExtension(app)
 
