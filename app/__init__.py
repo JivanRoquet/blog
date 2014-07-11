@@ -10,9 +10,6 @@ app = Flask(__name__)
 app.config.from_object('config')
 app.debug = app.config['DEBUG']
 
-if app.debug:
-    toolbar = DebugToolbarExtension(app)
-
 babel = Babel(app)
 
 # handles connection with MongoDB server
